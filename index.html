@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>devCodeCamp HTML Worksheet</title>
+        <title>Nik Matten's devCodeCamp HTML Worksheet</title>
         <style> body { font-family: Arial, Helvetica, sans-serif; } </style>
     </head>
 
@@ -11,14 +11,14 @@
         <br>
 
         <header>
-            <p>devCodeCamp HTML Worksheet</p>
+            <h1>devCodeCamp HTML Worksheet</h1>
         </header>
         
         <br>
 
         <main>
             <section>
-                <p>Section Overview</p>
+                <h2>Section Overview</h2>
 
                 <p>
                     This worksheet will help introduce you to some of the main concepts of HTML. You will learn:
@@ -26,22 +26,25 @@
 
                 <ul>
                     <li>
-                        <p>Paragraphs and Headers</p>
+                        <p><a href=#section1>Paragraphs and Headers</a></p>
                     </li>
                     <li>
-                        <p>Lists and Tables</p>
+                        <p><a href=#section2>Lists and Tables</a></p>
                     </li>
                     <li>
-                        <p>Attributes</p>
+                        <p><a href=#section3>Attributes</a></p>
                     </li>
                     <li>
-                        <p>Hyperlinks</p>
+                        <p><a href=#section4>Hyperlinks</a></p>
                     </li>
                     <li>
-                        <p>Images</p>
+                        <p><a href=#section5>Images</a></p>
                     </li>
                     <li>
-                        <p>In-line and block elements</p>
+                        <p><a href=#section6>Semantic Elements</a></p>
+                    </li>
+                    <li>
+                        <p><a href=#section7>In-line and block elements</a></p>
                     </li>
                     <li>
                         <p>And much more!</p>
@@ -82,9 +85,9 @@
             <br>
             <br>
 
-            <section>
+            <section id="section1">
 
-                <p>Section 1 - Paragraphs and Headers</p>
+                <h2>Section 1 - Paragraphs and Headers</h2>
 
                 <p>
                     Most basic text you want to show up on a page should be enclosed with &lt;p&gt;&lt;/p&gt; tags, the "p" standing for "paragraph".
@@ -96,6 +99,10 @@
 
                 <p>
                     Add your own &lt;p&gt; tag element below this line. You can write anything you'd like, but starting a new language with the phrase "Hello world!" is good luck!
+                </p>
+                
+                <p>
+                    Hello World!
                 </p>
 
                 <p>
@@ -110,12 +117,12 @@
                     Alter the following lines to use their corresponding "h" tag. Remember that you will need to have the opening and closing tags match. Non-matching tags might lead to unpredicatable behavior by the browser.
                 </p>
 
-                <p>Heading 1</p>
-                <p>Heading 2</p>
-                <p>Heading 3</p>
-                <p>Heading 4</p>
-                <p>Heading 5</p>
-                <p>Heading 6</p>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
                 <p>Paragraph</p>
 
                 <p>
@@ -129,11 +136,11 @@
             <br>
             <br>
 
-            <section>
+            <section id="section2">
 
-                <p>Section 2 - Lists and Tables</p>
+                <h2>Section 2 - Lists and Tables</h2>
 
-                <p>Subsection a. - Lists</p>
+                <h3>Subsection a. - Lists</h3>
 
                 <p>Lists are a quick way to organize a sequence of items. There are two types of lists:</p>
 
@@ -158,13 +165,37 @@
                     Create your own Unordered List below this line, list out your 3 favorite movies.
                 </p>
 
+                <ul>
+                    <li>
+                        <p>Interstellar</p>
+                    </li>
+                    <li>
+                        <p>The Illusionist</p>
+                    </li>
+                    <li>
+                        <p>Secret Life of Walter Mitty</p>
+                    </li>
+                </ul>
+
                 <p>
                     Ordered lists work just like Unordered lists, but they use a &lt;ol&gt; tag instead of &lt;ul&gt;. Change the Unordered List you just created into an Ordered List. The &lt;li&gt; tags can remain the same!
                 </p>
+                
+                <ol>
+                    <li>
+                        <p>Interstellar</p>
+                    </li>
+                    <li>
+                        <p>The Illusionist</p>
+                    </li>
+                    <li>
+                        <p>Secret Life of Walter Mitty</p>
+                    </li>
+                </ol>
 
                 <br>
 
-                <p>Subsection b. - Tables</p>
+                <h3>Subsection b. - Tables</h3>
 
                 <p>
                     Tables are very similar in structur to lists. There is an opening and closing &lt;table&gt; tag, and inside, there are &lt;tr&gt; (table row) tags to designate the different rows. However, unlike lists, which only have a single item in each row, a table is also split into columns, which allows a row to contain multiple cells of data.
@@ -175,6 +206,10 @@
                 </p>
 
                 <table>
+                    <tr>
+                        <th>Star Trek</th>
+                        <th>Star Wars</th>
+                    </tr>
                     <tr>
                         <td>Picard</td>
                         <td>Kenobi</td>
@@ -198,7 +233,7 @@
                 </p>
 
                 <p>
-                    A Header row in a table is just like other rows. It is still enclosed with a &lt;tr&gt; tag, but it should be the first row inside the table, and it will use &lt;tr&gt; rather than &lt;td&gt; to define its cells.
+                    A Header row in a table is just like other rows. It is still enclosed with a &lt;tr&gt; tag, but it should be the first row inside the table, and it will use &lt;th&gt; rather than &lt;td&gt; to define its cells.
                 </p>
 
                 <p>
@@ -218,8 +253,8 @@
             <br>
             <br>
 
-            <section>
-                <p>Section 3 - Attributes</p>
+            <section id="section3">
+                <h2>Section 3 - Attributes</h2>
 
                 <p>
                     Some tags require more information than just what type of tag it is. This "extra" information is supplied through <b>attributes</b>.
@@ -241,7 +276,7 @@
                     That means there can never be another element on the same .html page that also has an id with the value of "Earl".
                 </p>
                 
-                <div>
+                <div id="target">
                     <p>
                         This block of text is enclosed by a &lt;div&gt; element. Divs typically don't have a visual element that can be identified in the browser, so they are often used to create "divisions" in a webpage. We will do more with divs later, but for now, give this div an attribute with the name <b>id</b> and the value <b>"target"</b>. We will shortly be using this id as the target of a hyperlink.
                     </p>
@@ -251,8 +286,8 @@
             <br>
             <br>
 
-            <section>
-                <p>Section 4 - Hyperlinks and Formatting</p>
+            <section id="section4">
+                <h2>Section 4 - Hyperlinks and Formatting</h2>
 
 
 
@@ -294,9 +329,9 @@
                     Also take note of the grey lines to the left of the screen in VS Code. When formatted correctly, these grey lines will show the "scope" of a single tag, connecting the opening tag to the closing tag. Additionally, there should be empty space with no line between the closing of one tag and the opening of a "sibling" tag on the same level.
                 </p>
 
-        <p>
+                <p>
                     This paragraph's &lt;p&gt; tags are not aligned correctly. Notice how its tags looks different from the other paragraphs surrounding it. Fix the opening and closing tag here so that this paragraph is formatted seemlessly with its siblings!
-                        </p>
+                </p>
                                     
                 <p>
                     The following section is using many &lt;br&gt; tags to create some buffer space.
@@ -409,14 +444,18 @@
                     Now, create your own link below that will take you back up to the div that you gave the id of "target".
                 </p>
 
+                <p>
+                    <a href="#target">Target</a></p>
+                </p>
+
             </section>
 
             <br>
             <br>
 
-            <section>
+            <section id="section5">
 
-                <p>Section 5 - Images</p>
+                <h2>Section 5 - Images</h2>
 
                 <p>
                     Congratulations on making it this far! This plain text website must be very boring to stare at. Let's try to make it a little more exciting by adding an image.
@@ -445,14 +484,18 @@
                     There should be an image called "coffee.jpg" included in this folder. Add it to this page in an img tag below. Since it is in the same folder, you can just enter the filename itself in the src="". Also make sure to come up with a descriptive string for the alt!
                 </p>
 
+                <p>
+                    <img src="coffee.jpg" alt="Coffe mug on it's side with coffee beans spilling out.">
+                </p>
+
             </section>
 
             <br>
             <br>
 
-            <section>
+            <section id="section6">
 
-                <p>Section 6 - Semantic Elements</p>
+                <h2>Section 6 - Semantic Elements</h2>
 
                 <p>
                     Up until now, we have mostly been using &lt;p&gt; tags to contain our content. The &lt;p&gt; tag is great for housing paragraph text, but as the design of our sites gets more complex, there is need for better ways to organize our content.
@@ -513,9 +556,9 @@
             <br>
             <br>
 
-            <section>
+            <section id="section7">
 
-                <p>Section 7 - Inline vs Block</p>
+                <h2>Section 7 - Inline vs Block</h2>
 
                 <p>
                     The last thing we'll look at on this project is something that you may or may not have noticed yet.
@@ -568,5 +611,8 @@
             <br>
 
         </main>
+        <footer>
+            Completed by Nik Matten
+        </footer>
     </body>
 </html>
